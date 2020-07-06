@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <script src="static/js/jquery.js"></script>
+        <script src="static/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                start();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="overlay" class="hidden overlay center"></div>
+        <div id="cards-in-play-popup" class="cards-in-play-popup center hidden">
+            <ul id="cards-in-play" class="card-container"></ul>
+            <button id="submit-winner">Submit</button>
+        </div>
+        <div id="askName" class="popup center hidden">
+            <div class="center">
+                <label>Enter name:</label><input type="text" id="player-name" />
+                <button id="submit-name">Submit</button>
+            </div>
+        </div>
+        <div class="display">
+            <ul id="header-container" class="card-container">
+                <ul id="black-card-container">
+                    <li id="black-card" class="card black"></li>
+                </ul>
+                <li id="player-list" class="card players">Waiting for players...</li>
+            </ul>
+            <ul id="card-container" class="card-container"></ul>
+        </div>
+        <button id="submit-card">Submit Card</button>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+six
+flask
+redis
+flask-sse
